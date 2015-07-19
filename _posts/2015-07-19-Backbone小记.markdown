@@ -19,7 +19,7 @@ Backbone.js是一个web端javascript的轻量级MVC框架。为什么说是轻�
 使用Backbone.js可以让你像写Java代码一样对js代码进行组织，比如定义类，类的属性、方法，这点非常重要。
 比如传统的js开发是这样的：
 
-```
+
 	<input type="button" value="save" onclick="save()"/>
 	<input type="button" value="add" onclick="add()"/>
 	<script type="text/javascript">
@@ -30,13 +30,12 @@ Backbone.js是一个web端javascript的轻量级MVC框架。为什么说是轻�
 	        ...
 	    }
 	</script>`
-```
 
 页面内容一多，js代码会分布在页面的各个角落，维护、开发都很麻烦。
 
 使用Backbone处理：
-```
-	var AppView = Backbone.View.extend({
+
+	    var AppView = Backbone.View.extend({
 	    el: "body",
 	
 	    // 事件
@@ -56,7 +55,7 @@ Backbone.js是一个web端javascript的轻量级MVC框架。为什么说是轻�
 	});
 	
 	var appView = new AppView;
-```
+
 
 使用Backbone之后，所有js的代码都会在同一个地方，也就是对js代码进行了组织，我只需要管理这段js代码即可，前面button里的onclick事件就不需要单独写了。
 
@@ -67,7 +66,6 @@ Backbone中有4个重要的概念，分别是Model，Collection，View，Router�
 Model是Javascript应用程序的核心，包括基础的数据以及围绕着这些数据的逻辑：数据转换、数据验证、访问控制。自定义的Model可以继承Backbone.Model。1个Person实体：
 
 
-```
 	var Person = Backbone.Model.extend({
 		initialize: function() {
 		        // 构造实例的时候会调用这里
@@ -114,7 +112,7 @@ Model是Javascript应用程序的核心，包括基础的数据以及围绕着�
 	if(!person.set({age: '-1'}, {validate: true})) { //set 的时候加上validate: true， 让其验证，这里验证出错返回false
 	    console.log('设置age属性出错------22'); //这里会打印
 	}
-```
+
 
 更加详细的资料请参考[Model](http://backbone.org/#Model)
 
@@ -123,7 +121,7 @@ Collection, 集合， 也就是多个Model，很好理解。
 
 可以绑定’change’, ‘add’, ‘remove’事件到集合上以监听集合的数据状态。
 
-```
+
 	// 这里的代码依赖之前的Person这个Model
 	var Family = Backbone.Collection.extend({
 	    model: Person,
@@ -168,7 +166,7 @@ Collection, 集合， 也就是多个Model，很好理解。
 	
 	//根据age排序，并从对象里拿出name属性
 	console.log(family.pluck('name')); // ["son", "mother", "father"]
-```
+
 
 更加详细的资料请参考[Collection](http://backbone.org/Collection)
 
@@ -177,7 +175,7 @@ Backbone的View是用来显示你的model中的数据到页面的，同时它也
 
 html:
 
-```
+
 	<ul id="persons">
 	
 	</ul>
@@ -210,13 +208,13 @@ html:
 	    var appView = new AppView;
 	
 	});
-```
+
 更加详细的资料请参考[View](http://backbone.org/View)
 
 ###Router
 Router既控制器，用来监控一些#(锚)地址的访问情况。
 
-```
+
 	var AppRouter = Backbone.Router.extend({
 	
 	    routes: {
@@ -245,7 +243,7 @@ Router既控制器，用来监控一些#(锚)地址的访问情况。
 	
 	// 使用Router必须要有以下这个代码
 	Backbone.history.start();
-```
+
 
 更加详细的资料请参考[Router](http://backbone.org/Router)
 
