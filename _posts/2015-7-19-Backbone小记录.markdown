@@ -1,4 +1,15 @@
-# Backbone小记录
+---
+layout: post
+title:  "backbone简介"
+date:   2015-07-19 19:14:54
+categories: Backbone
+excerpt: backbone
+description: 简单的Backbone入门介绍.
+---
+
+* content
+{:toc}
+# Backbone小记
 
 ------
 
