@@ -4,6 +4,7 @@ title:  "hello markdown"
 date:   2015-07-19 15:14:54
 categories: Markdown
 excerpt: use markdown
+description: 是的，这个是测试用的，不必当真.
 ---
 
 * content

@@ -294,10 +294,6 @@ blockquote:last-child {
 	background-color: #777;
 }
 
-#top:hover .arrow.stick{
-	background-color: #00A8FF;
-}
-
 #top .arrow{
 	margin:0 auto;
 	padding-top:8px;
@@ -305,14 +301,14 @@ blockquote:last-child {
 	height: 0;
 	border-right: 7px solid transparent;
 	border-left: 7px solid transparent; 
-	border-bottom: 7px solid #7f7f7f;
+	border-bottom: 7px solid #00A8FF;
 	
 }
 #top .stick{
 	margin:0 auto;
 	padding-bottom:8px;
 	width: 6px;
-	background-color: #7f7f7f;
+	background-color: #00A8FF;
 }
 
 /**
