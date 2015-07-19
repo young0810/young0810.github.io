@@ -1,15 +1,3 @@
----
-layout: post
-title:  "backbonejs使用"
-date:   2015-07-19 17:14:54
-categories: Backbone
-excerpt: backbone
-description: 简单的backbone入门知识.
----
-
-* content
-{:toc}
-
 # Backbone小记录
 
 ------
@@ -21,10 +9,9 @@ Backbone.js是一个web端javascript的轻量级MVC框架。为什么说是轻�
 ##为何使用Backbone
 使用Backbone.js可以让你像写Java代码一样对js代码进行组织，比如定义类，类的属性、方法，这点非常重要。
 比如传统的js开发是这样的：
-```javascript
+```
 <input type="button" value="save" onclick="save()"/>
 <input type="button" value="add" onclick="add()"/>
-
 ...
 
 <script type="text/javascript">
@@ -119,7 +106,7 @@ if(!person.set({age: '-1'}, {validate: true})) { //set 的时候加上validate: 
 }
 ```
 
-更加详细的资料请参考[Model][1]
+更加详细的资料请参考[Model](http://backbone.org/#Model)
 
 ###Collection
 Collection, 集合， 也就是多个Model，很好理解。
@@ -173,7 +160,7 @@ family.sort();
 console.log(family.pluck('name')); // ["son", "mother", "father"]
 ```
 
-更加详细的资料请参考[Collection][2]
+更加详细的资料请参考[Collection](http://backbone.org/Collection)
 
 ###View
 Backbone的View是用来显示你的model中的数据到页面的，同时它也可用来监听DOM上的事件然后做出响应。
@@ -214,7 +201,7 @@ $(document).ready(function() {
 
 });
 ```
-更加详细的资料请参考[View][3]
+更加详细的资料请参考[View](http://backbone.org/View)
 
 ###Router
 Router既控制器，用来监控一些#(锚)地址的访问情况。
@@ -250,5 +237,5 @@ var appRouter = new AppRouter;
 Backbone.history.start();
 ```
 
-更加详细的资料请参考[Router][4]
+更加详细的资料请参考[Router](http://backbone.org/Router)
 
