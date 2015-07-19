@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "hello markdown"
+date:   2015-07-19 15:14:54
+categories: Markdown
+excerpt: use markdown
+---
+
 # 欢迎使用 Cmd Markdown 编辑阅读器粗体文本
 
 ------
